@@ -4,7 +4,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-				javac Student.java
                 echo 'Building..'
             }
         }
