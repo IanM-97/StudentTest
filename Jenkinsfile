@@ -5,10 +5,14 @@ pipeline {
 	{
         stage('Build') 
 		{
+			tools 
+			{
+				JDK "JAVA_HOME"
+			}
 			steps 
 			{
 				echo 'Building..'
-				javac studentTest.java
+				javac Student.java
 			}
         }
         stage('Test') 
