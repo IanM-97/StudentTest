@@ -3,6 +3,8 @@ pipeline {
 
     stages {
         stage('Build') {
+		set PATH="C:\Program Files\Java\jdk1.8.0_31\bin"
+		javac -version 
 		tools {
                JDK "jdk1.8.0_121"
             }
