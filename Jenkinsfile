@@ -5,21 +5,17 @@ pipeline {
 	{
         stage('Build') 
 		{
-			tools 
+		steps 
 			{
-				JDK "jdk1.8.0_121";
+			echo 'Building..'
 			}
-			steps 
-			{
-				echo 'Building..'
-			}
-        }
+        	}
         stage('Test') 
 		{
-            steps 
+            	steps 
 			{
-                echo 'Testing..'
-            }
-        }
-    }
+                	echo 'Testing..'
+            		}
+        	}
+    	}
 }
