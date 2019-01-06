@@ -4,11 +4,14 @@ pipeline {
     stages 
 	{
         stage('Build') 
-		{ 
+		{
+			tools 
+			{
+				JDK "JAVA_HOME"
+			}
 			steps 
 			{
 				echo 'Building..'
-				javac -version
 			}
         }
         stage('Test') 
