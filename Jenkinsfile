@@ -8,7 +8,7 @@ pipeline {
 			steps 
 			{
 				echo 'Building..'
-				javac Student.java
+				javac student.java
 			}
         }
         stage('Test') 
