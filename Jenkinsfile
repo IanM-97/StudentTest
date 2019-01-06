@@ -8,6 +8,7 @@ pipeline {
 		steps 
 			{
 			echo 'Building..'
+			bat 'build.bat'
 			}
         	}
         stage('Test') 
@@ -15,6 +16,7 @@ pipeline {
             	steps 
 			{
                 	echo 'Testing..'
+					bat 'test.bat'
             		}
         	}
     	}
