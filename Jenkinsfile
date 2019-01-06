@@ -7,7 +7,7 @@ pipeline {
 		{
 			tools 
 			{
-				jdk "jdk1.8.0_121";
+				JDK "jdk1.8.0_121";
 			}
 			steps 
 			{
