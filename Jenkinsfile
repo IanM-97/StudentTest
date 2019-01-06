@@ -5,10 +5,12 @@ pipeline {
 	{
         stage('Build') 
 		{
-
+			tools 
+			{
+				jdk "jdk1.8.0_121";
+			}
 			steps 
 			{
-				java -version
 				echo 'Building..'
 			}
         }
