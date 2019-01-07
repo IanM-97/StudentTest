@@ -7,17 +7,15 @@ pipeline {
 		{
 		steps 
 			{
-			echo 'Building..'
 			bat 'build.bat'
 			}
-        	}
+        }
         stage('Test') 
 		{
-            	steps 
+            steps 
 			{
-                	echo 'Testing..'
-					bat 'test.bat'
-            		}
-        	}
-    	}
+			bat 'test.bat'
+            }
+        }
+    }
 }
