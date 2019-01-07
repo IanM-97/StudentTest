@@ -22,6 +22,7 @@ pipeline {
             steps 
 			{
 			bat 'test.bat'
+			ohsdjks
             }
         }
     }
